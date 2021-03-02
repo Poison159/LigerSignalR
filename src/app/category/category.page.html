@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button color="liger"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="liger">{{branch.resturant.name}} | {{branch.name}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-img style="height: 30%;" [src]="branch.resturant.imgPath"></ion-img>
+    <ion-card color="dark" *ngIf="branch.branchMeals.length !== 0">
+      <ion-button color="liger" (click)="details('Special')" expand="block">Specials</ion-button>
+    </ion-card>
+    <ion-card color="dark" *ngFor="let cat of branch.resturant.categories">
+      <ion-button color="liger" (click)="details(cat)" expand="block">{{cat}}</ion-button>
+    </ion-card>
+    <ion-row>
+      <ion-text style="margin:auto;">
+       {{branch.contactNumber}}
+      </ion-text>
+    </ion-row>
+   
+</ion-content>

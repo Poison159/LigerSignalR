@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>rating</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-radio-group [(ngModel)]="rate" style="margin: auto;" color="dark">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1"></ion-col>
+        <ion-col size="2">
+          <ion-label>1</ion-label>
+          <ion-radio value="1"></ion-radio>
+        </ion-col>
+        <ion-col size="2">
+          <ion-label>2</ion-label>
+          <ion-radio value="2"></ion-radio>
+        </ion-col>
+        <ion-col size="2">
+          <ion-label>3</ion-label>
+          <ion-radio value="3"></ion-radio>
+        </ion-col>
+        <ion-col size="2">
+          <ion-label>4</ion-label>
+          <ion-radio value="4"></ion-radio>
+        </ion-col>
+        <ion-col size="2">
+          <ion-label>5</ion-label>
+          <ion-radio value="5"></ion-radio>
+        </ion-col>
+        <ion-col size="1"></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-radio-group>
+  <br/>
+</ion-content>
